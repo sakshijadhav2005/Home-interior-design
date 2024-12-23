@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function changed()
+{
+ var ad=document.getElementById("op");
+
+ switch(ad)
+{ 
+ case "Add":
+var a=parseInt(prompt("Enter Number:"));
+ var b=parseInt(prompt("Enter Number:"));
+ var c=a+b;
+ alert("addition="+c);
+ break;
+ }
+ }
+</script>
+<select name="operator" id="op" onchange="changed()">
+<option value="Add">Add</option> 
+<option value="-">sub</option> 
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+import javax.swing.*;
+import java.awt.*;
+public class Pr12_JPasswordChange
+{
+    public static void main(String[] args) {
+        JFrame f = new JFrame();
+        f.setVisible(true);
+        f.setSize(400,400);
+        f.setLayout(new FlowLayout());
+        Label l1=new Label("Enter Password");
+        JPasswordField pf = new JPasswordField(6);
+		String str=pf.getText(Integer.parseInt());
+         if(str>)
+        pf.setEchoChar('#');
+ 
+        f.add(pf);
+    }
+}

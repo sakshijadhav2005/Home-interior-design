@@ -1,0 +1,47 @@
+<html>
+<body>
+<div> 
+<center>
+
+<div style="background-color:#FFCC99;height:70%;width:35%;padding-top:100">
+<h1><b><center>Charity Donation form</center></b></h1>
+<center>
+<script language="javascript"type="text/javascript">
+var n;
+function MyFunction()
+{
+var n1=document.getElementsById("n").value;
+var email=document.getElementsById("e").value;
+var donation=document.getElementsById("d").value;
+var feedBack=document.getElementsById("f").value;
+ alert("Name="+n1+"\nEmail="+email+"\nDonation="+donation+"\nFeedBack="+feedBack);
+}
+</script>
+<form >
+  <div>
+    <b><label>Name:</label></b>
+    <input id="n" name="name" type="text" />
+  </div><br>
+  <div>
+    <b><label>Email:</label></b>
+    <input id="e" name="email" type="email"/>
+  </div><br>
+  <div>
+  <b><label>Donation:</label></b>
+  <input id="d" name="donation" type="amount"style="padding-right:30px;"/>
+  </div><br>
+  <div>
+  <b><label  >FeedBack:</label></b>
+  <input id="f" name="feedBack" type="textarea"style="padding-right:33px;"/>
+  </div><br>
+  <b><button onclick="MyFunction()">Submit</button></b><br>
+	
+
+</center>
+</div>
+</center>
+</div>
+</form>
+</body>
+
+</html>

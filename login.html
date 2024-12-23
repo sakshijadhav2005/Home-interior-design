@@ -1,0 +1,73 @@
+<html>
+<head>
+<a href="home.html" style="color:black; width:5% ;padding-top:50;padding-left:40;text-decoration:none">HOME</a>
+<a href="form1.html" style="color:black; width:5% ;padding-top:50;padding-left:37;text-decoration:none">REGISTRACTION FORM</a>
+<a href="team_design.html" style="color:black; width:5% ;padding-top:50;padding-left:700;text-decoration:none">DESIGN TEAM</a>
+<a href="contact_us.html" style="color:black; width:5% ;padding-top:50;padding-left:50;text-decoration:none">CONTACT US</a>
+<a href="login.html" style="color:black; width:5% ;padding-top:50;padding-left:50;text-decoration:none">LOGIN</a>
+
+
+<script>
+ function set_cookie(){
+  var key=document.getElementById("uname").value;
+  var value=document.getElementById("pwd").value;
+  document.cookie=key+"="+value+";expires=Mon,18 Dec 2023 12:00:00 UTC";
+  alert("Cookie created successfully");}
+function myfunction()
+{
+    alert("Login successfully")
+}
+function previous() 
+		{
+            window.history.back();
+        }
+
+</script>
+</head>
+<body>
+<div style="background-image:url(login.jpeg);width:100%;height:100%">
+<div style="padding-left:900;padding-top:200">
+<form name="myForm">
+    <h1 style="color: beige;font-size: 300%;">Login Here</h1>
+<b style="color: beige;font-size:200%;">Enter Username </b><input type="text" id="uname" style="font-size:120%;width:20%;height:6%;border-radius:20;border-top-left-radius:100px;border-bottom-right-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px" required><br/><br>
+<b style="color: beige;font-size: 200%;">Enter Password</b> <input type="password" id="pwd" style="font-size:120%;width:20%;height:6%;border-radius:20;border-top-left-radius:100px;border-bottom-right-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px"required><br/>
+<br>
+<input type="button" value="Login" onclick="set_cookie()" style="font-size:150%;width:20%;height:6%;border-radius:20;border-top-left-radius:100px;border-bottom-right-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px"/>
+<button onClick="previous()" 
+                id="backward"style="font-size:150%;width:20%;height:6%;border-radius:20;border-top-left-radius:100px;border-bottom-right-radius:100px;border-top-right-radius:100px;border-bottom-left-radius:100px"><a href="eyestore.html" style="text-decoration:none;color:black">Back</a>
+         </button>
+<p id="panel"></p>
+</form>
+</div>
+</div>
+<font color="black">
+<center>
+<h1>Interior</h1>
+<font color="black">
+<h4>Golden Frame Interior Design</h4></center>
+
+<ul style="width=20%; float:left;padding-left:150">
+<font color="black">
+<h2>About Us</h2>
+<li><a href="home.html" style="color:gray;width:8%;text-decoration:none">home</a></li>
+
+
+<li><a href="contact_us.html" style="color:gray;width:55%;text-decoration:none">contact</a></li>
+</ul>
+<ul style=" width=30%; float:left;padding-left:80">
+<h2>Shop</h2>
+<li><a href="bathroom.html" style="color:gray;width:8%;text-decoration:none">bath room</a></li>
+<li><a href="living.html" style="color:gray;width:7%;text-decoration:none">living room </a></li>
+<li><a href="bedroom.html" style="color:gray;width:7%;text-decoration:none">bed room </a></li>
+<li><a href="swimming.html" style="color:gray;width:8%;text-decoration:none">swimming</a></li>
+<li><a href="kitchen.html" style="color:gray;width:8%;text-decoration:none">kitchen room</a></li>
+
+</ul>
+<ul style="width=30%; float:right;padding-right:70">
+<h2>Address</h2>
+<li><a href="contact_us.html" style="color:gray;width:8%;text-decoration:none">123fifthAvenue,NewYork,NY10160 contact@info.com</a></li>
+
+<li><a href="url" style="color:gray;width:7%;text-decoration:none">9292426868</a></li>
+
+</body>
+</html>

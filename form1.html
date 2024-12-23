@@ -1,0 +1,176 @@
+<html>
+<head>
+	<title>
+		Registration Form By saku
+	</title>
+	<div>
+	<a href="home.html" style="color:White; width:5% ;padding-top:50;padding-left:40;text-decoration:none">HOME</a>
+<a href="form1.html" style="color:White; width:5% ;padding-top:50;padding-left:37;text-decoration:none">REGISTRACTION FORM</a>
+<a href="team_design.html" style="color:White; width:5% ;padding-top:50;padding-left:700;text-decoration:none">DESIGN TEAM</a>
+<a href="contact_us.html" style="color:White; width:5% ;padding-top:50;padding-left:50;text-decoration:none">CONTACT US</a>
+<a href="login.html" style="color:White; width:5% ;padding-top:50;padding-left:50;text-decoration:none">LOGIN</a>
+
+</div>
+	<style>
+	table td,tr{
+	background-color:white;
+    box-sizing: border-box;
+    width: 100%;
+	position:relative;
+    border: 10px solid gray;
+    float: left;
+    align-content: center;
+    align-items: center;
+	}
+	</style>
+	<SCRIPT language="javascript" text="text/javascript">
+			function f2()
+			{
+			   var n1=document.getElementById("n").value;
+			   var n2=document.getElementById("a").value;
+			   var n3=document.getElementById("id2").value;
+			   var n4=document.getElementById("p").value;
+			   var n5=document.getElementById("id1").value;
+			   alert("\nName is "+n1+"\nAddress : "+n2+"\nEmail : "+n3+"\nPassword : "+n3+"\nTelphone : "+n4);
+			}	
+			function focusd(a)
+{
+ a.style.background="lightgreen";
+}
+function change()
+{
+ alert("Selection change")
+}
+function validatephone() {
+    var phoneNumber = document.getElementById("id1").value;
+    var phonePattern = /^[0-9]{10}$/;
+    if (phonePattern.test(phoneNumber)) {
+     document.saku.Telephone.style.backgroundColor = "yellow";
+    } else {
+       document.saku.Telephone.style.backgroundColor = "red";
+    }}
+function validateemail() {
+    var email = document.getElementById("id2").value;
+    var emailPattern = /^\w+([-.]?\w+)@\w+([-.]?\w+).\w+([-.]\w+)*$/;
+    if (emailPattern.test(email)) {
+       document.saku.EMail.style.backgroundColor = "yellow";
+    } else {
+       document.saku.EMail.style.backgroundColor = "red";}}	
+	</SCRIPT>
+</head>
+<form name="saku">
+<body bgcolor="gray">
+	<h1 style="text-align: center; color:White;">
+		REGISTRATION FORM FOR INTERIOR DESIGN
+	</h1>
+	<form="r1">
+	<table>
+	<tr>
+	<td>
+		<p>
+			Name:
+			<input type="text" size="65" name="Name" id="n" required>	
+		</p>
+	</td>
+	</tr>
+	<tr>
+	<td>
+		<p>
+			Address:
+			<input type="text" size="65" name="Address"id="a" required>
+		</p>
+</td>
+</tr>
+<tr>
+	<td>
+		<p>
+			E-mail Address:
+			<input type="text" size="65" name="EMail"id="id2" onchange="validateemail()" required>
+		</p>
+		</td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			Password:
+			<input type="text" size="65" name="Password" id="p" onfocus="focusd(this)" required>
+		</p>
+</td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			Telephone:
+			<input type="text" size="65" name="Telephone" id="id1" onchange="validatephone()" required>
+			</p>
+</td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			SELECT YOUR design
+			<select type="text" value="" name="Subject" onchange="change()">
+				<option>Bedroom</option>
+				<option>Bathroom</option>
+				<option>Living Room</option>
+				<option>Kitchen Room</option>
+				<option>Swimming pool</option>
+			</select>
+		</p>
+
+	</td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			Comments:
+			<textarea cols="55" name="Comment" required> </textarea>
+		</p>
+		</td>
+		</tr>
+		<tr>
+	<td>
+		<p>
+			<input type="button" value="submit"onclick="f2()">
+		</p>
+		</td>
+		</tr>
+		</table>
+		
+	</form>
+<font color="White">
+<center>
+<h1>Interior</h1>
+<font color="White">
+<h4>Golden Frame Interior Design</h4></center>
+
+<ul style="width=20%; float:left;padding-left:150">
+<font color="White">
+<h2>About Us</h2>
+<li><a href="home.html" style="color:White;width:8%;text-decoration:none">home</a></li>
+
+
+<li><a href="contact_us.html" style="color:White;width:55%;text-decoration:none">contact</a></li>
+</ul>
+<ul style=" width=30%; float:left;padding-left:80">
+<h2>Shop</h2>
+<li><a href="bathroom.html" style="color:White;width:8%;text-decoration:none">bath room</a></li>
+<li><a href="living.html" style="color:White;width:7%;text-decoration:none">living room </a></li>
+<li><a href="bedroom.html" style="color:White;width:7%;text-decoration:none">bed room </a></li>
+<li><a href="swimming.html" style="color:White;width:8%;text-decoration:none">swimming</a></li>
+<li><a href="kitchen.html" style="color:White;width:8%;text-decoration:none">kitchen room</a></li>
+
+</ul>
+<ul style="width=30%; float:right;padding-right:70">
+<h2>Address</h2>
+<li><a href="contact_us.html" style="color:White;width:8%;text-decoration:none">123fifthAvenue,NewYork,NY10160 contact@info.com</a></li>
+
+<li><a href="url" style="color:White;width:7%;text-decoration:none">9292426868</a></li>
+
+
+</ul>
+</div>
+</div>
+
+</body>
+</html>

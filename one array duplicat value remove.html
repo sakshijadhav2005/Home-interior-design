@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+
+var a= new Array(1,2,5,2,1,39,4,8,9,7);
+function mergearr(a)
+{
+ let unique=[];
+ for(i=0;i<a.length;i++)
+{
+  if(unique.indexOf(a[i])===-1)
+  {
+   unique.push(a[i]);
+  }
+}
+return unique;
+}
+document.write(mergearr(a));
+
+</script>
+</body>
+</html>
